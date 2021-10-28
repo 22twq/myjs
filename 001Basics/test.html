@@ -12,6 +12,21 @@
         html{
             height:100%;
         }
+        @keyframes myfirst {
+            0%   {background-color:red;  font-size: 20px;left:0px; top:0px;}
+            25%  {background-color:yellow;  font-size: 30px;left:200px; top:0px;}
+            50%  {background-color:blue;  font-size: 40px;left:200px; top:200px;}
+            75%  {background-color:green; font-size: 30px;left:0px; top:200px;}
+            100% {background-color:red;  font-size: 10px;left:0px; top:0px;}
+        }
+        h1,p{
+            width: 200px;
+            height: 85px;
+            position: relative;
+            animation-name:myfirst;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
     </style>
 
 
@@ -23,7 +38,7 @@
 <h1>静夜思</h1><!-- 通过<h1>-<h6>标签来定义 -->
 <hr><!--定义水平线-->
 
-<p>床前明月光,,,</p>
+<p>床前明月光</p>
 <p>疑是地上霜</p>
 <p>举头望明月</p>
 <p>低头思故乡</p>
