@@ -1,0 +1,80 @@
+
+html,body,page{
+    height:100%;
+    width: 100%;
+    margin: 0;
+}
+page{
+    font-size:300px;
+    height:100%;
+    color: blue;
+    position:absolute;
+    padding-top: 30%;
+    text-align: center;
+}
+#a{
+    background-color: lightgreen;
+    animation-name:a;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+#b{
+    background-color: red;
+    animation-name:b;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+#c{
+    background-color:yellow;
+    background-image: url("../images/libai.jpeg");
+    background-size: 100%;
+    animation-name:c;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+#d{
+    background-color:black;
+    animation-name:d;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+#z{
+    font-size:100px;
+    display: block;
+    animation-name:z;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes a {
+    0%{opacity:0}
+    12%{opacity:100}
+    25%{opacity:0}
+    100%{opacity:0}
+}
+@keyframes b{
+    0%{opacity:0}
+    25%{opacity:0}
+    37%{opacity:100}
+    50%{opacity:0}
+    100%{opacity:0}
+}
+@keyframes c {
+    0%{opacity:0}
+    50%{opacity:0}
+    67%{opacity:100}
+    75%{opacity:0}
+    100%{opacity:0}
+}
+@keyframes d {
+    0%{opacity:0}
+    75%{opacity:0}
+    87%{opacity:100}
+    100%{opacity:0}
+}
+@keyframes z {
+    0%{opacity:0}
+    70%{opacity:0}
+    80%{opacity:100}
+    90%{opacity:0}
+    100%{opacity:0}
+}
