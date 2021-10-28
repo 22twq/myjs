@@ -6,24 +6,26 @@
     <link rel="stylesheet" type="text/css" href="css/page.css" />
     <script>
         function audioAutoPlay(id) {
-        var audio = document.getElementById(id);
-        audio.play();
-        document.addEventListener("WeixinJSBridgeReady", function () {
-        audio.play();
-        }, false);
-        document.addEventListener("WeixinJSBridgeReady", function () {
+            var audio = document.getElementById(id);
             audio.play();
-        }, false);
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                audio.play();
+            }, false);
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                audio.play();
+            }, false);
         }
     </script>
-</head>
-<body>
 
-<audio  autoplay="autoplay" loop="loop">
+</head>
+<body onlode="audioAutoPlay(bgm)"><!--元素包含了页面可以看见的内容。定义文档主体。-->
+
+<audio id="bgm" autoplay="autoplay" loop="loop">
     <source src="bgm/miss.ogg" type="audio/ogg" />
     <source src="bgm/miss.mp3" type="audio/mpeg" />
-    Your browser does not support the audio element.
 </audio>
+
+
 <page id="a">春</page>
 <page id="b">夏</page>
 <page id="c">秋</page>
